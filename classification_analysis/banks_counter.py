@@ -5,7 +5,7 @@ import json
 banks = ["nu ", "bbva", "santander", "rappicard", "hsbc", "citibanamex", "banamex", "uala", "uala_mex", "nubank", "bancomer", "bancoppel", "banregio", "afirme"]
 
 # Load the tweets
-tweets_df = pd.read_csv(r'C:\Users\dilan\Documents\Github\DataWizards\classification_analysis\Base_HeyBanco.csv')
+tweets_df = pd.read_csv(r'C:\Users\dilan\Documents\Github\DataWizards\classification_analysis\FacebookReviews\FacebookReviews_classified.csv')
 
 # Count the number of tweets that mention each bank
 bank_counts = {bank: 0 for bank in banks}

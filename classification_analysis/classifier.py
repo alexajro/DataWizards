@@ -47,32 +47,32 @@ def topic_classification(tweet, sentiment):
 
 def main():
     # Load data
-    db_path = r'C:\Users\dilan\Documents\Github\DataWizards\classification_analysis\Base_HeyBanco.csv'
+    db_path = r'C:\Users\dilan\Documents\Github\DataWizards\classification_analysis\FacebookReviews\FacebookReviews.csv'
     tweets_df = load_data(db_path)
     
     # Sentiment analysis
     tweets_df = sentiment_analysis(tweets_df)
 
-    # Adding a 'category' column if not already present (initialize as None)
-    if 'category' not in tweets_df.columns:
-        tweets_df['category'] = None
+    # # Adding a 'category' column if not already present (initialize as None)
+    # if 'category' not in tweets_df.columns:
+    #     tweets_df['category'] = None
 
-    # Topic classification with sentiment analysis
-    for idx, row in tweets_df.iterrows():
-        sentiment = row['sentiment']
-        if sentiment == 'positive':
-            category = topic_classification(row['tweet'], 'positive')
-            tweets_df.at[idx, 'category'] = category
-        elif sentiment == 'negative':
-            category = topic_classification(row['tweet'], 'negative')
-            tweets_df.at[idx, 'category'] = category
-        else:# Optionally handle neutral or other sentiments if necessary
-            print(f"Skipping row with sentiment: neutral. No topic classification needed.")
+    # # Topic classification with sentiment analysis
+    # for idx, row in tweets_df.iterrows():
+    #     sentiment = row['sentiment']
+    #     if sentiment == 'positive':
+    #         category = topic_classification(row['tweet'], 'positive')
+    #         tweets_df.at[idx, 'category'] = category
+    #     elif sentiment == 'negative':
+    #         category = topic_classification(row['tweet'], 'negative')
+    #         tweets_df.at[idx, 'category'] = category
+    #     else:# Optionally handle neutral or other sentiments if necessary
+    #         print(f"Skipping row with sentiment: neutral. No topic classification needed.")
 
-        # Print progress every 100 iterations to monitor progress without too much clutter
-        print(f"Processed {idx+1} rows")
+    #     # Print progress every 100 iterations to monitor progress without too much clutter
+    #     print(f"Processed {idx+1} rows")
     
-    new_db_path = r'C:\Users\dilan\Documents\Github\DataWizards\classification_analysis\Base_HeyBanco_Classified.csv'
+    new_db_path = r'C:\Users\dilan\Documents\Github\DataWizards\classification_analysis\FacebookReviews\FacebookReviews_classified.csv'
     tweets_df.to_csv(new_db_path, index=False)
     print("Data saved to", new_db_path)
 
