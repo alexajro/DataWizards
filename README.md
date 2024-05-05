@@ -8,6 +8,12 @@ Welcome to the GitHub repository for the DataWizards team's submission for the 2
 
 Our project revolves around analyzing a significant dataset of comments sourced from various platforms. The goal is to derive insightful analyses and propose actionable strategies. The scope of the analysis is broad, allowing for flexibility in addressing various areas if the problem is well defined and the solution is effectively articulated, analyzing the data, and scaling the proposals.
 
+### Team Members
+
+- [Bella Perales](https://www.linkedin.com/in/bella-perales/)
+- [David Ávila](#)
+- [Alexa Ramírez](https://www.linkedin.com/in/alexa-jimena-ramirez-ortiz-a65600256)
+- [Dilan G. Castañeda](https://www.linkedin.com/in/dilangonzalezcastaneda/)
 
 ## Project Documentation
 
