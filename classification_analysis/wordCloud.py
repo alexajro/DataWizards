@@ -48,11 +48,13 @@ diff_words = 'diff_words.csv'
 with open(modified_word_count_path, 'w', encoding='utf-8') as f:
     f.write(modified_word_count_json)
 
+# Save the top words to a CSV file for easy input in word cloud generators
 with open(diff_words, 'w', encoding='utf-8') as f:
     for word, count in modified_word_count_result.items():
         if count > 3:
             f.write(str(count) + ',' + word + '\n')
 
+# Print the top 10 words and their counts
 print("Top words and counts:")
 for i in range(10):
     print(list(modified_word_count_result.keys())[i], list(modified_word_count_result.values())[i])
