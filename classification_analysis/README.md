@@ -16,12 +16,19 @@ This directory aims to analyze customer tweets and identify the most frequently 
 </p>
 
 4. **Classification**: An LLM (Language Learning Model) was employed to classify the customer feedback into the following categories:
-    - **Positive**
-        - Good things about the app
-        - Kudos for good customer service
-    - **Negative**
-        - Problems with the app
-        - Problems with customer service
+<p align="center">
+
+| Sentiment | Topics | Identifier |
+|-----------|--------|-------|
+| **Positive** | Good things about the app | 0 |
+|           | Kudos for good customer service | 1 |
+|           | Others | 2 |
+| **Negative** | Problems with the app | 3 |
+|           | Problems with customer service | 4 |
+|           | Problems with products | 5 |
+|           | Others | 6 |
+
+</p>
 
 ## Benefits
 
