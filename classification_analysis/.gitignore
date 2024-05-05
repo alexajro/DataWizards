@@ -7,6 +7,9 @@ Use the csv database attached for the following instructions:
 2. Once identified the topics, classify the tweet into one topic. Return a saved json file.
 3.  Finally, return a json file containing the counter for the topics.
 
+classifications:
+- 1. Customer Service
+- 2. App Problems
 
 DB0.csv
 test0.py
