@@ -54,7 +54,35 @@ Located in the `classification_analysis` directory, this analysis seeks to uncov
 
 ### Temporal Analysis
 
-Analysis of the temporal patterns of comments and reviews, further details and visualizations can be found in the `temporal_analysis` directory.
+This section delves into the temporal dynamics of comments and reviews. Detailed analyses and visualizations are available in the `temporal_analysis` directory. Key visualizations include hourly heat maps for both Facebook and X comments, showcasing the frequency of interactions over different times of the day.
+
+#### Hourly Heat Maps
+
+The following heat maps illustrate the hourly distribution of comments for a better understanding of user engagement patterns.
+
+<div align="center">
+    <table>
+        <tr>
+            <th>X Comments</th>
+            <th>Facebook Reviews</th>
+        </tr>
+        <tr>
+            <td><img src='temporal_analysis/Heat Map for X Comments.jpg' alt='Heat Map for X Comments' style='width:300px'></td>
+            <td><img src='temporal_analysis/Heat Map for Facebook Reviews.jpg' alt='Heat Map for Facebook Reviews' style='width:350px'></td>
+        </tr>
+    </table>
+</div>
+
+In addition to the heat maps, due to the limited temporal data available from the X dataset, we expanded our analysis to include a monthly bar graph for Facebook reviews, providing insights into review trends over several months.
+
+#### Monthly Trends in Facebook Reviews
+
+Below is a bar graph depicting monthly trends in Facebook reviews, which helps identify peak periods of user activity and sentiment shifts.
+
+<div align="center">
+    <img src='temporal_analysis/Monthly Bar Graph Facebook Reviews.jpg' alt='Monthly Bar Graph for Facebook Reviews' style='width:500px'>
+</div>
+
 
 ## Conclusions
 
