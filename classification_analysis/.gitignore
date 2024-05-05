@@ -1,0 +1,12 @@
+The database is composed by three columns: day, hour and tweet (text).
+
+The purpose of the analysis is to determine opportunities for improvement related to the tweets. Tweets were left in an online bank twitter account called "HeyBanco". Tweets have emojis.
+
+Use the csv database attached for the following instructions:
+1.  Identify as many topics as possible by analyzing the tweets.
+2. Once identified the topics, classify the tweet into one topic. Return a saved json file.
+3.  Finally, return a json file containing the counter for the topics.
+
+
+DB0.csv
+test0.py
